@@ -184,3 +184,62 @@ img {
   background-color: var(--color-pill-dot);
   vertical-align: middle;
 }
+
+/* ===== Navbar — sticky header (positioning) + Bootstrap navbar ===== */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* Bootstrap's navbar reads its colors and spacing from these variables */
+.navbar {
+  --bs-navbar-padding-y: 14px;
+  --bs-navbar-color: var(--color-text);
+  --bs-navbar-hover-color: var(--color-text);
+  --bs-navbar-active-color: var(--color-text);
+  --bs-navbar-nav-link-padding-x: 14px;
+}
+
+/* Wordmark with a small square logo made only with CSS */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.375rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  color: var(--color-text);
+}
+
+.brand-mark {
+  width: 22px;
+  height: 22px;
+  border-radius: 4px 12px 4px 4px;
+  background-color: var(--color-text);
+}
+
+.navbar-nav .nav-link {
+  padding: 8px 14px;
+  border-radius: var(--radius-pill);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  background-color: var(--color-surface);
+}
+
+.navbar-toggler {
+  border: 0;
+  padding: 6px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 4px var(--color-accent-soft);
+}
