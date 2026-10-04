@@ -1,0 +1,7 @@
+# Course files that should not be published
+*.docx
+Вставленное изображение.png
+
+# System and editor files
+.DS_Store
+.vscode/
