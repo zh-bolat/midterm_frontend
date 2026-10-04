@@ -549,3 +549,29 @@ img {
 .stat-label {
   color: var(--color-muted);
 }
+
+/* ===== About: values — CSS Grid ===== */
+.values-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 48px 40px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.value-item {
+  padding-top: 24px;
+  border-top: 1px solid #d2d2d7;
+}
+
+.value-title {
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.value-item p {
+  margin-bottom: 0;
+  color: var(--color-muted);
+}
