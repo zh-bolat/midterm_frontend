@@ -715,6 +715,7 @@ img {
 }
 
 .gallery-item {
+  position: relative; /* the caption chip (.image-chip) is placed inside the figure */
   margin: 0;
   border-radius: var(--radius);
   overflow: hidden;
