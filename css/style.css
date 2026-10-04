@@ -2,3 +2,122 @@
   Forma — shared stylesheet for all pages
   Loaded after Bootstrap 5.3.3, so rules here can override Bootstrap.
 */
+
+/* ===== Design tokens — CSS custom properties ===== */
+:root {
+  /* Colors */
+  --color-text: #1d1d1f;
+  --color-muted: #6e6e73;
+  --color-bg: #ffffff;
+  --color-surface: #f5f5f7;
+  --color-border: #e5e5e7;
+  --color-accent: #0071e3;
+  --color-accent-hover: #0062c4;
+  --color-accent-soft: #e8f1fd;
+  --color-accent-soft-hover: #d7e7fb;
+  --color-pill: #d9efe9;
+  --color-pill-dot: #2a8c7a;
+
+  /* Shapes */
+  --radius: 16px;
+  --radius-sm: 12px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+
+  /* Fonts */
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-serif: 'Instrument Serif', serif;
+
+  /* Spacing between page sections (made smaller in the media queries) */
+  --section-space: 120px;
+}
+
+/* ===== Base — element selectors ===== */
+body {
+  font-family: var(--font-sans);
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+  color: var(--color-text);
+}
+
+h3,
+h4 {
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-accent-hover);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ===== Typography helpers — reusable classes ===== */
+.eyebrow {
+  margin-bottom: 16px;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--color-muted);
+}
+
+.section-title {
+  margin-bottom: 20px;
+  font-size: clamp(2.25rem, 4.5vw, 3.75rem);
+  font-weight: 700;
+}
+
+.section-lead {
+  max-width: 640px;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: var(--color-muted);
+}
+
+/* Rare elegant accent: one italic serif word inside a heading */
+.serif-accent {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.1em;
+  letter-spacing: -0.01em;
+}
+
+/* ===== Section spacing ===== */
+.section {
+  padding-top: var(--section-space);
+  padding-bottom: var(--section-space);
+}
+
+.section-surface {
+  background-color: var(--color-surface);
+}
+
+.section-header {
+  max-width: 760px;
+  margin-bottom: 56px;
+}
