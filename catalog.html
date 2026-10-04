@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The Forma catalog: sofas, armchairs and chairs designed in Astana, with prices, sizes and delivery times for every model.">
+  <title>Catalog — Forma</title>
+
+  <!-- Fonts: Inter for all text, Instrument Serif for rare accents -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap first, then our own styles so they can override it -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Site header: the same navbar is used on every page -->
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true"></span>
+          Forma
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-nav">
+          <ul class="navbar-nav mx-auto mb-3 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="catalog.html">Catalog</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+          <a class="btn btn-accent btn-small" href="contact.html">Visit showroom</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Page header: same pattern as on the About page -->
+    <section class="page-header">
+      <div class="container text-center">
+        <p class="eyebrow">Catalog</p>
+        <h1 class="page-title">
+          Fewer pieces,<br>
+          <span class="pill"><span class="pill-dot"></span>better</span> rooms.
+        </h1>
+        <p class="section-lead mx-auto">Sofas, armchairs and chairs designed in Astana. Every model comes with free delivery, assembly and a 10-year warranty.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site footer: the same on every page -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-lg-5">
+          <a class="brand mb-3" href="index.html">
+            <span class="brand-mark" aria-hidden="true"></span>
+            Forma
+          </a>
+          <p class="footer-text">Minimalist furniture designed in Astana and built to last for decades.</p>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h2 class="footer-heading">Pages</h2>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="catalog.html">Catalog</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-4">
+          <h2 class="footer-heading">Showroom</h2>
+          <address class="footer-text">
+            12 Example Avenue, Astana<br>
+            Open daily, <span class="text-nowrap">10:00–20:00</span><br>
+            <a href="mailto:hello@forma.example">hello@forma.example</a>
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom d-flex flex-wrap justify-content-between gap-2">
+        <span>© 2026 Forma. All rights reserved.</span>
+        <span>Made by students in Astana</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS: only needed for the mobile navbar toggle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
