@@ -115,3 +115,7 @@ midterm_frontend/
 All photos are from [Unsplash](https://unsplash.com/) and are used under the
 [Unsplash License](https://unsplash.com/license). They were resized and cropped
 with Unsplash URL parameters.
+
+## Live site
+
+[https://zh-bolat.github.io/midterm_frontend/](https://zh-bolat.github.io/midterm_frontend/)
