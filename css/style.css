@@ -169,7 +169,7 @@ img {
    Usage: <span class="pill"><span class="pill-dot"></span>calm</span> */
 .pill {
   display: inline-block;
-  padding: 0.02em 0.32em 0.08em 0.26em;
+  padding: 0.02em 0.28em 0.08em 0.24em;
   border-radius: var(--radius-pill);
   background-color: var(--color-pill);
   white-space: nowrap;
@@ -289,4 +289,25 @@ img {
   padding-top: 24px;
   border-top: 1px solid var(--color-border);
   color: var(--color-muted);
+}
+
+/* ===== Home: hero — styled by ID ===== */
+#hero {
+  padding-top: 104px;
+  padding-bottom: 72px;
+}
+
+.hero-title {
+  margin-bottom: 28px;
+  font-size: clamp(3rem, 8.5vw, 7rem);
+  font-weight: 800;
+  letter-spacing: -0.045em;
+  line-height: 1.04;
+}
+
+.hero-subtitle {
+  max-width: 620px;
+  margin-bottom: 0;
+  font-size: 1.375rem;
+  line-height: 1.45;
 }
