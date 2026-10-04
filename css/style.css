@@ -631,6 +631,30 @@ img {
   color: var(--color-muted);
 }
 
+/* ===== Catalog: product tags — position absolute ===== */
+/* The card becomes the reference box for the tag inside it */
+.product-card {
+  position: relative;
+}
+
+/* Small label in the top-left corner of the photo, e.g. "New" */
+.product-tag {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  background-color: rgba(255, 255, 255, 0.92);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.product-tag-new {
+  background-color: var(--color-accent);
+  color: #ffffff;
+}
+
 /* ==========================================================
    Responsive — media queries (keep this section LAST in the file)
    Breakpoints match Bootstrap: lg = 992px, sm = 576px
