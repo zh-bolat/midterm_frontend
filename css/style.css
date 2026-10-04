@@ -737,6 +737,64 @@ img {
   grid-column: span 2;
 }
 
+/* ===== Contact: booking form — Bootstrap form classes + own styles ===== */
+.form-card {
+  height: 100%;
+  padding: 40px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+.form-title {
+  margin-bottom: 8px;
+  font-size: 2rem;
+}
+
+.form-intro {
+  margin-bottom: 32px;
+  color: var(--color-muted);
+}
+
+.booking-form .form-label {
+  margin-bottom: 8px;
+  font-size: 0.9375rem;
+  font-weight: 500;
+}
+
+/* Soft rounded inputs */
+.booking-form .form-control,
+.booking-form .form-select {
+  padding: 12px 16px;
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+  color: var(--color-text);
+}
+
+/* Room for the arrow of the select box */
+.booking-form .form-select {
+  padding-right: 40px;
+  background-position: right 16px center;
+}
+
+/* Accent focus ring instead of Bootstrap's default one */
+.booking-form .form-control:focus,
+.booking-form .form-select:focus,
+.booking-form .form-check-input:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 4px var(--color-accent-soft);
+}
+
+.booking-form .form-check-input:checked {
+  border-color: var(--color-accent);
+  background-color: var(--color-accent);
+}
+
+.booking-form .form-check-label {
+  font-size: 0.9375rem;
+  color: var(--color-muted);
+}
+
 /* ==========================================================
    Responsive — media queries (keep this section LAST in the file)
    Breakpoints match Bootstrap: lg = 992px, sm = 576px
