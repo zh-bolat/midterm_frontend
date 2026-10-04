@@ -488,3 +488,17 @@ img {
   font-size: clamp(2.5rem, 6vw, 5rem);
   font-weight: 800;
 }
+
+/* ===== Page header — top section of inner pages (About, Catalog, Gallery, Contact) ===== */
+.page-header {
+  padding-top: 104px;
+  padding-bottom: 80px;
+}
+
+.page-title {
+  margin-bottom: 24px;
+  font-size: clamp(2.75rem, 7vw, 6rem);
+  font-weight: 800;
+  letter-spacing: -0.045em;
+  line-height: 1.04;
+}
