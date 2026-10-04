@@ -72,3 +72,46 @@ midterm_frontend/
 - Numbers row laid out with Flexbox
 - Values as a list in a two-column CSS Grid
 - Team cards with initials avatars
+
+### Catalog (`catalog.html`)
+- Page header with a headline pill
+- Six product cards in a Bootstrap `row g-4` grid (`col-12 col-sm-6 col-lg-4`)
+- "New" and "Bestseller" tags placed on the cards with `position: absolute`
+- Comparison table of all models (`caption`, `thead`, `tbody`, `tfoot`, `th scope`) inside Bootstrap `.table-responsive`
+- Call-to-action band linking to Contact and Gallery
+
+### Gallery (`gallery.html`)
+- Photo gallery built with CSS Grid: 3 columns, one photo spans two rows and one spans two columns
+- Each photo is a `figure` with a `figcaption` chip placed with `position: absolute`
+- 2 columns on tablets, 1 column on phones
+- Call-to-action band linking to Contact and Catalog
+
+### Contact (`contact.html`)
+- "Book a showroom visit" form: name, email, phone (`tel`), date, topic `select`, message `textarea`, consent checkbox
+- Every field has a `<label for>`, required fields use `required`; Bootstrap form classes with our own rounded inputs and blue focus ring
+- Form and info card side by side with the Bootstrap grid (`col-lg-7` / `col-lg-5`)
+- Info card laid out with Flexbox: `address`, opening hours list, `tel:` and `mailto:` links
+
+## Requirements coverage
+
+| Requirement | Where in the code |
+|---|---|
+| 5+ pages with shared navigation | `index.html`, `about.html`, `catalog.html`, `gallery.html`, `contact.html` — same `header.site-header` and `footer.site-footer` |
+| Semantic HTML | `header`, `nav`, `main`, `section`, `article` (product and team cards), `figure`/`figcaption` (hero, story, gallery), `aside` and `address` (Contact), `footer` |
+| `div` and `span` | Bootstrap `.container` / `.row` / `.col-*` divs; `.pill`, `.pill-dot`, `.price`, `.product-tag`, `.avatar` spans |
+| Table | `catalog.html` `#compare` — `.compare-table` with `caption`, `thead`, `tbody`, `tfoot`, `th scope="col"` / `scope="row"` |
+| Form | `contact.html` `#booking` — `.booking-form` with text, email, tel, date, select, textarea, checkbox and labels |
+| Flexbox | `.features` (Home), `.stats` (About), `.info-card` and `.hours-list li` (Contact), `.image-chip`, `.brand` |
+| CSS Grid | `.category-grid` (Home), `.values-list` (About), `.gallery-grid` (Gallery) |
+| Positioning | `.site-header` (`sticky`), `.hero-media` + `.image-chip` (Home), `.product-card` + `.product-tag` (Catalog), `.gallery-item` + `figcaption.image-chip` (Gallery) |
+| Bootstrap grid | `#featured` cards (Home), `#story` and `#team` (About), `#products` cards (Catalog), `#booking` (Contact), footer |
+| Bootstrap components / utilities | navbar with collapse, `.btn`, `.table`, `.table-responsive`, form classes, `d-flex`, `gap-*`, `mx-auto`, `text-center`, `text-end`, `pt-0`, `mb-*` |
+| CSS custom properties | `:root` tokens at the top of `css/style.css` |
+| Media queries | end of `css/style.css`: `max-width: 991.98px` (tablet) and `max-width: 575.98px` (mobile) |
+| Element, class and ID selectors | `body`, `h1`, `a` … / `.section`, `.btn-accent` … / `#hero`, `#why-forma` |
+
+## Image credits
+
+All photos are from [Unsplash](https://unsplash.com/) and are used under the
+[Unsplash License](https://unsplash.com/license). They were resized and cropped
+with Unsplash URL parameters.
