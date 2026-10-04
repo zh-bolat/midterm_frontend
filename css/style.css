@@ -575,3 +575,51 @@ img {
   margin-bottom: 0;
   color: var(--color-muted);
 }
+
+/* ===== About: team cards with initials avatars ===== */
+.team-card {
+  height: 100%;
+  padding: 40px 24px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+/* A round avatar made from a span with the person's initials */
+.avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 88px;
+  height: 88px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  font-size: 1.75rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.avatar-green {
+  background-color: var(--color-pill);
+  color: var(--color-pill-dot);
+}
+
+.avatar-blue {
+  background-color: var(--color-accent-soft);
+  color: var(--color-accent);
+}
+
+.avatar-grey {
+  background-color: var(--color-surface);
+  color: var(--color-text);
+}
+
+.team-name {
+  margin-bottom: 4px;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.team-role {
+  margin-bottom: 0;
+  color: var(--color-muted);
+}
