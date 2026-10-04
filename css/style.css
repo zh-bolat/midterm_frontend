@@ -795,6 +795,54 @@ img {
   color: var(--color-muted);
 }
 
+/* ===== Contact: showroom info card — Flexbox ===== */
+.info-card {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  height: 100%;
+  padding: 40px;
+  border-radius: var(--radius-lg);
+  background-color: var(--color-surface);
+}
+
+.info-title {
+  margin-bottom: 16px;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.info-address {
+  margin-bottom: 0;
+  font-size: 1.125rem;
+  line-height: 1.7;
+}
+
+.hours-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Each row: label on the left, time on the right */
+.hours-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--color-border-strong);
+}
+
+.hours-list li span:last-child {
+  color: var(--color-muted);
+  text-align: right;
+}
+
+/* margin-top: auto pushes the buttons to the bottom of the card */
+.info-actions {
+  margin-top: auto;
+}
+
 /* ==========================================================
    Responsive — media queries (keep this section LAST in the file)
    Breakpoints match Bootstrap: lg = 992px, sm = 576px
