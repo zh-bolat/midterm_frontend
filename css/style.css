@@ -502,3 +502,22 @@ img {
   letter-spacing: -0.045em;
   line-height: 1.04;
 }
+
+/* ===== About: story — Bootstrap grid (row / col-lg-6) ===== */
+.story-text {
+  font-size: 1.125rem;
+  color: var(--color-muted);
+}
+
+.story-figure img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+}
+
+.story-figure figcaption {
+  margin-top: 12px;
+  font-size: 0.875rem;
+  color: var(--color-muted);
+}
