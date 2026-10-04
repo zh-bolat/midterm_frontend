@@ -294,7 +294,6 @@ img {
 /* ===== Home: hero — styled by ID ===== */
 #hero {
   padding-top: 104px;
-  padding-bottom: 72px;
 }
 
 .hero-title {
@@ -353,4 +352,44 @@ img {
 .chip-price {
   font-weight: 500;
   color: var(--color-muted);
+}
+
+/* ===== Home: categories — CSS Grid ===== */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 280px;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Living takes a 2 x 2 block, Bedroom takes 2 columns */
+.category-tile-large {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.category-tile-wide {
+  grid-column: span 2;
+}
+
+.category-tile a {
+  position: relative; /* the .image-chip is placed inside the link */
+  display: block;
+  height: 100%;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.category-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.category-tile a:hover img {
+  transform: scale(1.04);
 }
