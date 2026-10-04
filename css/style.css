@@ -433,3 +433,50 @@ img {
 .link-arrow {
   font-weight: 500;
 }
+
+/* ===== Home: why Forma — Flexbox ===== */
+#why-forma {
+  background-color: var(--color-surface);
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Each card grows equally; on smaller screens flex-basis changes (see media queries) */
+.feature {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+  padding: 32px 28px;
+  border-radius: var(--radius);
+  background-color: var(--color-bg);
+}
+
+.feature-number {
+  align-self: flex-start;
+  margin-bottom: 48px;
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  background-color: var(--color-accent-soft);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
+.feature-title {
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.feature-text {
+  margin-bottom: 0;
+  font-size: 0.9375rem;
+  color: var(--color-muted);
+}
