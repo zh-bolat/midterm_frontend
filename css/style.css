@@ -53,6 +53,12 @@ h4 {
   color: var(--color-text);
 }
 
+/* Big headings: spread words evenly over the lines */
+h1,
+h2 {
+  text-wrap: balance;
+}
+
 h3,
 h4 {
   letter-spacing: -0.02em;
@@ -691,6 +697,11 @@ img {
     --section-space: 64px;
   }
 
+  /* 20px side padding instead of Bootstrap's 12px */
+  .container {
+    --bs-gutter-x: 2.5rem;
+  }
+
   body {
     font-size: 16px;
   }
@@ -763,6 +774,6 @@ img {
   }
 
   .page-title {
-    font-size: 2.75rem;
+    font-size: 2.5rem;
   }
 }
