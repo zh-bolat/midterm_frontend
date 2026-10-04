@@ -655,6 +655,57 @@ img {
   color: #ffffff;
 }
 
+/* ===== Catalog: comparison table — Bootstrap .table + own styles ===== */
+/* White rounded card around the table (it sits on the grey section) */
+.compare-card {
+  padding: 8px 24px;
+  border-radius: var(--radius-lg);
+  background-color: var(--color-bg);
+}
+
+/* Bootstrap's .table reads its colors from --bs-table-* variables */
+.compare-table {
+  --bs-table-color: var(--color-text);
+  --bs-table-bg: transparent;
+  --bs-table-border-color: var(--color-border);
+  margin-bottom: 0;
+  font-size: 0.9375rem;
+  white-space: nowrap; /* every cell stays on one line */
+}
+
+.compare-table caption {
+  padding: 20px 16px 8px;
+  font-size: 0.875rem;
+  color: var(--color-muted);
+}
+
+.compare-table th,
+.compare-table td {
+  padding: 18px 16px;
+  vertical-align: middle;
+}
+
+/* Column titles: small and grey, with a slightly darker line below */
+.compare-table thead th {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-muted);
+  border-bottom-color: var(--color-border-strong);
+}
+
+/* Model names (row headers) */
+.compare-table tbody th {
+  font-weight: 600;
+}
+
+/* Footer note: no line below, small grey text */
+.compare-table tfoot td {
+  padding-top: 20px;
+  border-bottom: 0;
+  font-size: 0.875rem;
+  color: var(--color-muted);
+}
+
 /* ==========================================================
    Responsive — media queries (keep this section LAST in the file)
    Breakpoints match Bootstrap: lg = 992px, sm = 576px
