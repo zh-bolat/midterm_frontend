@@ -121,3 +121,66 @@ img {
   max-width: 760px;
   margin-bottom: 56px;
 }
+
+/* ===== Buttons — pill-shaped, built on Bootstrap .btn =====
+   Bootstrap's .btn reads its colors and sizes from --bs-btn-* variables,
+   so our classes only change those variables.
+   Usage: <a class="btn btn-accent">  or  <a class="btn btn-soft"> */
+.btn-accent,
+.btn-soft {
+  --bs-btn-padding-x: 24px;
+  --bs-btn-padding-y: 12px;
+  --bs-btn-font-size: 1.0625rem;
+  --bs-btn-font-weight: 500;
+  --bs-btn-border-width: 0;
+  --bs-btn-border-radius: var(--radius-pill);
+  --bs-btn-focus-box-shadow: 0 0 0 4px var(--color-accent-soft);
+  transition: background-color 0.2s ease;
+}
+
+/* Primary: solid accent blue */
+.btn-accent {
+  --bs-btn-color: #ffffff;
+  --bs-btn-bg: var(--color-accent);
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-hover-bg: var(--color-accent-hover);
+  --bs-btn-active-color: #ffffff;
+  --bs-btn-active-bg: var(--color-accent-hover);
+}
+
+/* Secondary: soft light-blue background with blue text */
+.btn-soft {
+  --bs-btn-color: var(--color-accent);
+  --bs-btn-bg: var(--color-accent-soft);
+  --bs-btn-hover-color: var(--color-accent-hover);
+  --bs-btn-hover-bg: var(--color-accent-soft-hover);
+  --bs-btn-active-color: var(--color-accent-hover);
+  --bs-btn-active-bg: var(--color-accent-soft-hover);
+}
+
+/* Smaller size, used for the navbar button */
+.btn-small {
+  --bs-btn-padding-x: 18px;
+  --bs-btn-padding-y: 8px;
+  --bs-btn-font-size: 0.9375rem;
+}
+
+/* ===== Headline pill — tinted label with a dot, like Notion =====
+   Usage: <span class="pill"><span class="pill-dot"></span>calm</span> */
+.pill {
+  display: inline-block;
+  padding: 0.02em 0.32em 0.08em 0.26em;
+  border-radius: var(--radius-pill);
+  background-color: var(--color-pill);
+  white-space: nowrap;
+}
+
+.pill-dot {
+  display: inline-block;
+  width: 0.24em;
+  height: 0.24em;
+  margin-right: 0.14em;
+  border-radius: 50%;
+  background-color: var(--color-pill-dot);
+  vertical-align: middle;
+}
