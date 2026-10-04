@@ -706,6 +706,36 @@ img {
   color: var(--color-muted);
 }
 
+/* ===== Gallery: photo grid — CSS Grid ===== */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 300px;
+  gap: 20px;
+}
+
+.gallery-item {
+  margin: 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+/* The photo fills its grid cell and is cropped, not stretched */
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Bigger tiles: one is two rows tall, one is two columns wide */
+.gallery-item-tall {
+  grid-row: span 2;
+}
+
+.gallery-item-wide {
+  grid-column: span 2;
+}
+
 /* ==========================================================
    Responsive — media queries (keep this section LAST in the file)
    Breakpoints match Bootstrap: lg = 992px, sm = 576px
