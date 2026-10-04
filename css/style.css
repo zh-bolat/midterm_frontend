@@ -901,6 +901,22 @@ img {
     padding-top: 72px;
     padding-bottom: 64px;
   }
+
+  /* Gallery: 3 columns become 2, the wide photo takes one column */
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 260px;
+  }
+
+  .gallery-item-wide {
+    grid-column: span 1;
+  }
+
+  /* Contact: smaller padding inside the cards */
+  .form-card,
+  .info-card {
+    padding: 32px;
+  }
 }
 
 /* ===== Mobile phones (≤ 575.98px) ===== */
@@ -987,5 +1003,40 @@ img {
 
   .page-title {
     font-size: 2.5rem;
+  }
+
+  /* Catalog: tighter table, it scrolls sideways inside its card */
+  .compare-card {
+    padding: 4px 8px;
+  }
+
+  .compare-table th,
+  .compare-table td {
+    padding: 14px 12px;
+  }
+
+  /* Gallery: one column, every photo the same size */
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 240px;
+    gap: 16px;
+  }
+
+  .gallery-item-tall {
+    grid-row: span 1;
+  }
+
+  /* Contact */
+  .form-card,
+  .info-card {
+    padding: 24px;
+  }
+
+  .form-title {
+    font-size: 1.75rem;
+  }
+
+  .booking-form .btn {
+    width: 100%;
   }
 }
