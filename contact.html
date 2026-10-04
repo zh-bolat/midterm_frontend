@@ -56,6 +56,65 @@
       </div>
     </section>
 
+    <!-- Booking: form and showroom info side by side with the Bootstrap grid -->
+    <section id="booking" class="section pt-0">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-12 col-lg-7">
+            <div class="form-card">
+              <h2 class="form-title">Book a showroom visit</h2>
+              <p class="form-intro">We reply within one working day to confirm your time.</p>
+
+              <form class="booking-form" action="#" method="post">
+                <div class="row g-3">
+                  <div class="col-12">
+                    <label class="form-label" for="visit-name">Full name</label>
+                    <input class="form-control" type="text" id="visit-name" name="name" autocomplete="name" required>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label class="form-label" for="visit-email">Email</label>
+                    <input class="form-control" type="email" id="visit-email" name="email" autocomplete="email" required>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label class="form-label" for="visit-phone">Phone (optional)</label>
+                    <input class="form-control" type="tel" id="visit-phone" name="phone" autocomplete="tel" placeholder="+7 700 000 00 00">
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label class="form-label" for="visit-date">Preferred date</label>
+                    <input class="form-control" type="date" id="visit-date" name="date" required>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label class="form-label" for="visit-topic">Topic</label>
+                    <select class="form-select" id="visit-topic" name="topic" required>
+                      <option value="" selected disabled>Choose a room</option>
+                      <option value="living">Living</option>
+                      <option value="bedroom">Bedroom</option>
+                      <option value="dining">Dining</option>
+                      <option value="workspace">Workspace</option>
+                      <option value="custom">Custom order</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label" for="visit-message">Message (optional)</label>
+                    <textarea class="form-control" id="visit-message" name="message" rows="5" placeholder="Tell us about your room and what you are looking for"></textarea>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="visit-consent" name="consent" required>
+                      <label class="form-check-label" for="visit-consent">I agree that Forma may contact me about this visit.</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-accent" type="submit">Book my visit</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <!-- Site footer: the same on every page -->
